@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	int a,b,c,temp;
+	printf("Enter A:");
+	scanf("%d",&a);
+	printf("Enter B:");
+	scanf("%d",&b);
+	printf("Enter C:");
+	scanf("%d",&c);
+	temp=c;
+	c=b;
+	b=a;
+	a=temp;
+	printf("A After Swapping:%d\n",a);
+	printf("B After Swapping:%d\n",b);
+	printf("C After Swapping:%d",c);
+}
