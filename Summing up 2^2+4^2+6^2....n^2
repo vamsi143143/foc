@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+	int n,sum=0,i;
+	printf("Enter The N Value:");
+	scanf("%d",&n);
+	if(n%2==1)
+	{
+		n=n-1;
+	}
+	for(i=1;i<=n;i++)
+	{
+		if(i%2==0)
+		{
+			sum=sum+(i*i);
+			if(i<n)
+			{
+				printf("%d^2+",i);
+			}
+			else
+			{
+				printf("%d^2=%d",i,sum);
+			}
+		}
+	}
+}
